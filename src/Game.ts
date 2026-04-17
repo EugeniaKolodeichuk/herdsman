@@ -53,8 +53,7 @@ export class Game {
     this._scoreUI.position.set(GAME_WIDTH - 140, 0);
     const hero = new Hero();
 
-    const animalCount =
-      ANIMAL.minCount + Math.floor(Math.random() * (ANIMAL.maxCount - ANIMAL.minCount + 1));
+    const animalCount = ANIMAL.minCount + Math.floor(Math.random() * (ANIMAL.maxCount - ANIMAL.minCount + 1));
     this._animalManager = new AnimalManager(hero, GAME_WIDTH, GAME_HEIGHT, [this._yard.bounds]);
     this._animalManager.spawn(animalCount);
 

@@ -27,9 +27,7 @@ export class ScoringSystem implements ITickable {
   }
 
   update(_delta: number): void {
-    const scored = this.animalGroup.herdMembers.filter((animal) =>
-      this.yard.bounds.contains(animal.x, animal.y),
-    );
+    const scored = this.animalGroup.herdMembers.filter((animal) => this.yard.bounds.contains(animal.x, animal.y));
 
     for (const animal of scored) {
       this.animalGroup.removeFromHerd(animal);
