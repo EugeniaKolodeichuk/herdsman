@@ -16,6 +16,12 @@ export const HERO = {
   stopDistance: 5,
 };
 
+export const SPAWN = {
+  minDelay: 2000,
+  maxDelay: 6000,
+  margin: 50,
+};
+
 export const ANIMAL = {
   minCount: 5,
   maxCount: 10,
@@ -25,4 +31,8 @@ export const ANIMAL = {
   detectionRadius: 80,
   followDistance: 48,
   maxGroupSize: 5,
+  patrolSpeed: 1,
+  patrolStopDistance: 8,
+  patrolMargin: 40,
+  herdSpreadAngle: Math.PI / 3,
 };

@@ -5,4 +5,4 @@ async function main(): Promise<void> {
   await game.init();
 }
 
-main();
+main().catch(console.error);

@@ -16,7 +16,7 @@ export class ScoreUI extends Container {
       },
     });
 
-    this.scoreText.position.set(760, 16);
+    this.scoreText.position.set(0, 16);
     this.addChild(this.scoreText);
   }
 

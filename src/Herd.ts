@@ -35,7 +35,7 @@ export class Herd {
     const count = this.members.length;
     this.members.forEach((animal, index) => {
       const spread = count > 1 ? index / (count - 1) - 0.5 : 0;
-      const angle = Math.PI + spread * (Math.PI / 3);
+      const angle = Math.PI + spread * ANIMAL.herdSpreadAngle;
       const tx = heroX + Math.cos(angle) * ANIMAL.followDistance;
       const ty = heroY + Math.sin(angle) * ANIMAL.followDistance;
       animal.setFollowTarget(new Point(tx, ty));
